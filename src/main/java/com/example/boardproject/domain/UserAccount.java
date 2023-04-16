@@ -19,7 +19,7 @@ import java.util.Set;
 @Getter
 @ToString(callSuper = true)
 @Table(indexes = {
-        @Index(columnList = "userId", unique = true),
+//        @Index(columnList = "userId", unique = true),
         @Index(columnList = "email", unique = true),
         @Index(columnList = "createdAt"),
         @Index(columnList = "createdBy")
@@ -28,10 +28,9 @@ import java.util.Set;
 public class UserAccount extends AuditingFields{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto Increment 설정
-    private Long id;
+    @Column(length = 50)
+    private String userId;
 
-    @Setter @Column(length = 50) private String userId;
     @Setter @Column(nullable = false) private String userPassword;
 
     @Setter @Column(length = 100) private String email;
