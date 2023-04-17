@@ -3,7 +3,7 @@ package com.example.boardproject.controller;
 import com.example.boardproject.domain.constant.FormStatus;
 import com.example.boardproject.domain.constant.SearchType;
 import com.example.boardproject.dto.UserAccountDto;
-import com.example.boardproject.response.ArticleRequest;
+import com.example.boardproject.request.ArticleRequest;
 import com.example.boardproject.response.ArticleResponse;
 import com.example.boardproject.response.ArticleWithCommentsResponse;
 import com.example.boardproject.service.ArticleService;
@@ -16,6 +16,7 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
 

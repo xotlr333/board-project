@@ -6,7 +6,7 @@ import com.example.boardproject.domain.constant.SearchType;
 import com.example.boardproject.dto.ArticleDto;
 import com.example.boardproject.dto.ArticleWithCommentsDto;
 import com.example.boardproject.dto.UserAccountDto;
-import com.example.boardproject.response.ArticleRequest;
+import com.example.boardproject.request.ArticleRequest;
 import com.example.boardproject.response.ArticleResponse;
 import com.example.boardproject.service.ArticleService;
 import com.example.boardproject.service.PaginationService;
